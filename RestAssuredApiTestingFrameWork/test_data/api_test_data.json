@@ -1,0 +1,21 @@
+{
+  "valid_post": {
+    "title": "enterprise api automation",
+    "body": "playwright api request context",
+    "userId": 1
+  },
+  "valid_put": {
+    "id": 1,
+    "title": "updated enterprise api automation",
+    "body": "full resource update",
+    "userId": 1
+  },
+  "valid_patch": {
+    "title": "patched enterprise api automation"
+  },
+  "invalid_post": {
+    "title": "",
+    "body": "",
+    "userId": null
+  }
+}
