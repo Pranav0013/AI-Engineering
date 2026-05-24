@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "rest-assured-api-testing-framework"
+version = "0.1.0"
+description = "Python Playwright API testing framework with Rest Assured style fluent syntax"
+authors = ["QA Automation Team"]
+readme = "README.md"
+packages = [{ include = "framework" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+playwright = "^1.52.0"
+pytest = "^8.3.5"
+pytest-html = "^4.1.1"
+pytest-xdist = "^3.6.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.11"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
