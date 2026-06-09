@@ -1,0 +1,13 @@
+{
+  "name": "jira-testplan-generator",
+  "version": "1.0.0",
+  "description": "BLAST Framework — Jira Test Plan Generator (React + Express + GROQ)",
+  "scripts": {
+    "install:all": "cd tools && npm install && cd ../frontend && npm install",
+    "dev": "concurrently --names \"API,UI\" --prefix-colors \"blue,cyan\" \"cd tools && npm run dev\" \"cd frontend && npm run dev\"",
+    "start": "concurrently --names \"API,UI\" --prefix-colors \"blue,cyan\" \"cd tools && npm start\" \"cd frontend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
