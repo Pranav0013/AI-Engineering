@@ -1,0 +1,29 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "functions": {
+    "api/analyze.ts": {
+      "maxDuration": 60
+    },
+    "api/jira/projects.ts": {
+      "maxDuration": 15
+    },
+    "api/jira/create-issue.ts": {
+      "maxDuration": 15
+    }
+  },
+  "rewrites": [
+    { "source": "/((?!api/|@|src/|node_modules/)(?!.*\\.).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}
