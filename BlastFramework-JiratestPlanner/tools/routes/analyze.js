@@ -228,7 +228,7 @@ router.post('/analyze', async (req, res) => {
   const {
     issue,
     groqKey = process.env.GORQ_KEY,
-    groqModel = 'llama-3.3-70b-versatile',
+    groqModel = 'openai/gpt-oss-120b',
   } = req.body;
 
   if (!issue) return res.status(400).json({ error: 'issue object is required' });

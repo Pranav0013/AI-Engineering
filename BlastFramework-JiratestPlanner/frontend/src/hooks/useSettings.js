@@ -8,7 +8,7 @@ const defaults = {
   jiraToken: '',
   jiraBaseUrl: '',
   groqKey: '',
-  groqModel: 'llama-3.3-70b-versatile',
+  groqModel: 'openai/gpt-oss-120b',
 };
 
 export function useSettings() {
