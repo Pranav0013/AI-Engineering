@@ -117,7 +117,7 @@ export default function SettingsDrawer({ open, onClose, settings, onSave }) {
 
           <Section title="GROQ Configuration">
             <Field label="API Key" type="password" value={form.groqKey} onChange={set('groqKey')} placeholder="gsk_..." hint="Get your free key at console.groq.com" />
-            <Field label="Model" value={form.groqModel} onChange={set('groqModel')} placeholder="llama-3.3-70b-versatile" hint="Default: llama-3.3-70b-versatile (free)" />
+            <Field label="Model" value={form.groqModel} onChange={set('groqModel')} placeholder="openai/gpt-oss-120b" hint="Default: openai/gpt-oss-120b (free)" />
           </Section>
         </div>
 
